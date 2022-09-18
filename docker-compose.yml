@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  mysql:
+    image: postgres:alpine
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=basket
+      - POSTGRES_PASSWORD=bb_ll_tt_4321
+      - POSTGRES_DB=ball
+
